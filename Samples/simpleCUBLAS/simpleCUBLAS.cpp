@@ -96,6 +96,7 @@ int main(int argc, char **argv) {
 
   if (status != CUBLAS_STATUS_SUCCESS) {
     fprintf(stderr, "!!!! CUBLAS initialization error\n");
+    fprintf(stderr, "%d", status);
     return EXIT_FAILURE;
   }
 
